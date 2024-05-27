@@ -3,7 +3,7 @@ Built to automatically configure a new installation from all my github dotfiles 
 ## AUTOMATIC INSTALLATION AND UPDATE (arch)
 <div/>
 
-⚠️ Disclaimer : this will overwrite any exisiting config file (rofi, polybar, tlp)
+⚠️ Disclaimer : this could overwrite any exisiting config file (rofi, polybar, tlp), you will be prompted during the install in case you don't want to overwirte a certain config file.
 
 - Download the [installer](https://github.com/maxlttr/wm/blob/main/installer.sh) , make it executable and run it:
 
