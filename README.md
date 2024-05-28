@@ -5,7 +5,7 @@ Built to automatically configure a new installation from all my github dotfiles 
 
 ⚠️ You will be prompted during the install in case you don't want to overwirte a certain config file (polybar, rofi, qtile, tlp, sxhkd).
 
-- Download the [installer](https://github.com/maxlttr/wm/blob/main/installer.sh) , make it executable and run it:
+- Download the [installer](https://github.com/maxlttr/Automatic-fresh-install/blob/main/installer.sh) , make it executable and run it:
 
 (Directly copy and paste all the following commands in your terminal)
 ```sh
