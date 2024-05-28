@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #Basic packages
-sudo pacman -S git neofetch htop vim networkmanager otf-aurulent-nerd firefox qtile polybar rofi tlp xrandr arandr
+sudo pacman -S git neofetch htop vim networkmanager otf-aurulent-nerd firefox qtile polybar rofi tlp xorg-xrandr arandr
 #Clone the repo
 git clone https://github.com/maxlttr/wm.git
 #Polybar
