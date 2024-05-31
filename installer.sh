@@ -14,7 +14,7 @@ while true; do
                 cp -i ~/wm/qtile/autostart.sh ~/.config/qtile/autostart.sh;
                
                 #Wallpaper
-                cp -r ~/wm/wallpapers/ ~/.config/qtile/wallpapers/;
+                cp -r ~/wm/wallpapers/ ~/.config/qtile/;
                 
                 #Mouse
                 sudo cp -i ~/wm/mouse/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf;
