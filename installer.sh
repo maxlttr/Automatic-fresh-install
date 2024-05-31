@@ -56,5 +56,4 @@ case $yn in
                         
                 
                 exit;;
-        * ) echo "Please answer yes or no.";;
     esac
