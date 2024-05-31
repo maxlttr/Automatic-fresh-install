@@ -27,7 +27,7 @@ case $yn in
                 sudo rm -r ~/wm/ && rm installer.sh;
                 read -p "Reboot now ?" yn
                 case $yn in
-                        [Yy]* ) reboot;
+                        [Yy]* ) reboot; break;;
                         [Nn]* ) exit;;
                 break;;
         [Nn]* ) read -p "Do you wish to update ?" yn
