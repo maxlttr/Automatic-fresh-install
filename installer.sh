@@ -1,5 +1,5 @@
 while true; do
-	read -p "New install? (y/n) " yn
+    read -p "New install? (y/n) " yn
     case $yn in
         [Yy]* ) sudo pacman -S git neofetch htop vim networkmanager brightnessctl otf-aurulent-nerd firefox qtile polybar rofi tlp xorg-xrandr arandr; 
                 git clone https://github.com/maxlttr/wm.git;
