@@ -10,7 +10,7 @@ Built to automatically configure a new installation from all my github dotfiles 
 (Directly copy and paste all the following commands in your terminal)
 ```sh
 cd ~/
-curl -O https://raw.githubusercontent.com/maxlttr/Automatic-fresh-install/main/installer.sh
+curl -O https://raw.githubusercontent.com/maxlttr/auto-install/main installer.sh
 chmod +x installer.sh
 ./installer.sh
 ```
