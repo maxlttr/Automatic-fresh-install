@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #Basic packages
-sudo pacman -S git neofetch htop vim networkmanager otf-aurulent-nerd firefox qtile polybar rofi tlp xorg-xrandr arandr
+sudo pacman -S git neofetch htop vim networkmanager brightnessctl otf-aurulent-nerd firefox qtile polybar rofi tlp xorg-xrandr arandr
 #Clone the repo
 git clone https://github.com/maxlttr/wm.git
 #Polybar
@@ -14,5 +14,5 @@ cp -i ~/wm/autostart.sh ~/.config/qtile/autostart.sh
 #Wallpaper
 cp -i ~/wm/image.jpg ~/.config/qtile/image.jpg
 #Clean useless file and folder
-rm -r ~/wm/ && rm installer.sh
+sudo rm -r ~/wm/ && rm installer.sh
 reboot
