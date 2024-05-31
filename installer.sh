@@ -20,10 +20,9 @@ while true; do
                 sudo cp -i ~/wm/mouse/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf;
                 
                 #Configure TLP
+		alacritty -e firefox -new-window https://linrunner.de/tlp/settings/introduction.html;
                 alacritty -e sudo vim /etc/tlp.conf;
-	       	alacritty -e firefox -new-window https://linrunner.de/tlp/settings/introduction.html;
-
-                
+	
                 #Clean useless file and folder
                 sudo rm -r ~/wm/ && rm installer.sh; 
 
