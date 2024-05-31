@@ -28,7 +28,7 @@ case $yn in
         [Nn]* ) read -p "Do you wish to update ?" yn
                 case $yn in
                         [Yy]* ) git clone https://github.com/maxlttr/wm.git;
-                               
+                        
                                 #Polybar
                                 mkdir ~/.config/polybar/;
                                 cp -i ~/wm/config.ini ~/.config/polybar/config.ini;
