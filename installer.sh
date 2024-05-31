@@ -24,9 +24,7 @@ case $yn in
                 sudo vim /etc/tlp.conf && firefox -new-tab https://linrunner.de/tlp/settings/introduction.html;
                 
                 #Clean useless file and folder
-                sudo rm -r ~/wm/ && rm installer.sh;
-                
-                break;;
+                sudo rm -r ~/wm/ && rm installer.sh; break;;
         [Nn]* ) read -p "Do you wish to update ?" yn
                 case $yn in
                         [Yy]* ) git clone https://github.com/maxlttr/wm.git;
