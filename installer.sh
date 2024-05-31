@@ -25,10 +25,7 @@ case $yn in
                 
                 #Clean useless file and folder
                 sudo rm -r ~/wm/ && rm installer.sh;
-                read -p "Reboot now ?" yn
-                case $yn in
-                        [Yy]* ) reboot; break;;
-                        [Nn]* ) exit;;
+                
                 break;;
         [Nn]* ) read -p "Do you wish to update ?" yn
                 case $yn in
