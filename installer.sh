@@ -3,6 +3,7 @@ while true; do
     case $yn in
         [Yy]* ) sudo pacman -S git neofetch htop vim networkmanager brightnessctl otf-aurulent-nerd firefox qtile polybar rofi tlp xorg-xrandr arandr nitrogen; 
                 git clone https://github.com/maxlttr/wm.git;
+                break;;
         [Nn]* ) exit;;
     esac
     echo "Beginning config installation..."
