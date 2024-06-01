@@ -32,3 +32,5 @@ while true; do
 
     echo "Don't forget to configure TLP before rebooting..."
 done                
+
+echo "Don't forget to configure TLP before rebooting..."
