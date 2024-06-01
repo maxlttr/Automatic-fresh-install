@@ -18,6 +18,10 @@ while true; do
                 
                 #Mouse
                 sudo cp -i ~/wm/mouse/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf;
+
+  		#sxhkd
+    		mkdir ~/.config/sxhkd/
+      		cp -i ~/wm/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc		
                 
                 #Configure TLP
 		alacritty -e firefox -new-window https://linrunner.de/tlp/settings/introduction.html;
