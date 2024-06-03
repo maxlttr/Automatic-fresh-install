@@ -1,7 +1,7 @@
 echo "Please choose what you want to do"
 
 options=("New Install (includes basic packages)" "Update")
-select option in "$(options[@]}"
+select option in "${options[@]}"
 do
     case $option in
         "New Install (includes basic packages)")
