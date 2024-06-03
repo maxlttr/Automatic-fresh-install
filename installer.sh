@@ -15,7 +15,6 @@ config_setup () {
     #sxhkd
     mkdir ~/.config/sxhkd;
     cp -i ~/wm/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc;
-    cp -i ~/wm/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc;
     #Clean useless file and folder;
     sudo rm -r ~/wm/ && rm installer.sh; 
     echo "Don't forget to configure TLP before rebooting...";
