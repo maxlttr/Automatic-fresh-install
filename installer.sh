@@ -6,7 +6,7 @@ case $yn in
     [Nn]* ) break;;
 esac
 echo "Beginning config installation..."
-git clone https://github.com/maxlttr/wm.git;
+git clone https://github.com/maxlttr/wm.git
 #Qtile
 resolution=("1920x1080" "1366x768")
 select fav in "${resolution[@]}" 
