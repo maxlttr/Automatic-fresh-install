@@ -1,6 +1,6 @@
 Built to automatically configure a new installation from all my github dotfiles and scripts
 
-## AUTOMATIC INSTALLATION AND UPDATE (arch)
+## AUTOMATIC INSTALLATION (arch) AND UPDATE (all distros)
 <div/>
 
 ⚠️ You will be prompted during the install in case you don't want to overwirte a certain config file (polybar, rofi, qtile, tlp, sxhkd).
