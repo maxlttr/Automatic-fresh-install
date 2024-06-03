@@ -9,16 +9,18 @@ echo "Beginning config installation..."
     
 #Qtile
 resolution=("1920x1080" "1366x768")
-select fav in "${resolution[@]}" do;
-case $fav in
-    "1920x1080") 
-        cp -i ~/wm/qtile/1920x1080/config.py ~/.config/qtile/config.py;
-        exit;;
-        
-    "1366x768") 
-        cp -i ~/wm/qtile/1366x768/config.py ~/.config/qtile/config.py;
-        exit;;
-esac
+select fav in "${resolution[@]}" 
+do
+    case $fav in
+        "1920x1080") 
+            cp -i ~/wm/qtile/1920x1080/config.py ~/.config/qtile/config.py;
+            exit;;
+        "1366x768") 
+            cp -i ~/wm/qtile/1366x768/config.py ~/.config/qtile/config.py;
+            exit;;
+    esac
+done
+
 chmod +x ~/wm/qtile/autostart.sh;
 cp -i ~/wm/qtile/autostart.sh ~/.config/qtile/autostart.sh;
 
