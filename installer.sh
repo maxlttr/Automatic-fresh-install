@@ -2,8 +2,8 @@ read -p "Install basic packages? (y/n) " yn
 case $yn in
     [Yy]* ) sudo pacman -S git neofetch htop vim networkmanager brightnessctl otf-aurulent-nerd firefox qtile polybar rofi tlp xorg-xrandr arandr nitrogen; 
             git clone https://github.com/maxlttr/wm.git;
-            exit;;
-    [Nn]* ) exit;;
+            ;;
+    [Nn]* ) ;;
 esac
 echo "Beginning config installation..."
     
