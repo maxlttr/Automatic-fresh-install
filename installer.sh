@@ -6,7 +6,7 @@ do
     case $option in
         "New Install (includes basic packages)")
             echo "Beginning config installation...";
-            sudo pacman -S git neofetch htop vim networkmanager brightnessctl otf-aurulent-nerd qtile polybar rofi tlp xorg-xrandr arandr nitrogen; 
+            sudo pacman -S git neofetch htop vim man networkmanager brightnessctl otf-aurulent-nerd qtile polybar rofi tlp xorg-xrandr arandr nitrogen; 
             git clone https://github.com/maxlttr/wm.git;
             cp -i ~/wm/qtile/config.py ~/.config/qtile/config.py;
             chmod +x ~/wm/qtile/autostart.sh;
