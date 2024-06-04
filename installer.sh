@@ -32,7 +32,7 @@ do
     case $option in
         "New Install (includes basic packages)")
             echo "Beginning config installation...";
-            sudo pacman -S git neofetch htop vim man networkmanager brightnessctl otf-aurulent-nerd qtile polybar rofi tlp xorg-xrandr arandr nitrogen; 
+            sudo pacman -S git neofetch htop vim man networkmanager brightnessctl otf-aurulent-nerd sxhkd qtile polybar rofi tlp xorg-xrandr arandr nitrogen; 
             config_setup
             exit;;
         "Update")
