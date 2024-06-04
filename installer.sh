@@ -8,6 +8,9 @@ config_setup () {
     #Polybar
     mkdir ~/.config/polybar/;
     cp -i ~/wm/polybar/config.ini ~/.config/polybar/config.ini;
+    #Alacritty
+    mkdir alacritty
+    cp -i ~/wm/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
     #Wallpaper
     cp -r ~/wm/wallpapers/ ~/.config/;
     #Mouse
