@@ -1,26 +1,26 @@
 #!/bin/sh
 
 config_setup () {
-    git clone https://github.com/maxlttr/wm.git;
-    cp -i ~/wm/qtile/config.py ~/.config/qtile/config.py;
-    chmod +x ~/wm/qtile/autostart.sh;
-    cp -i ~/wm/qtile/autostart.sh ~/.config/qtile/autostart.sh;
+    git clone https://github.com/maxlttr/wm.git
+    cp -i ~/wm/qtile/config.py ~/.config/qtile/config.py
+    chmod +x ~/wm/qtile/autostart.sh
+    cp -i ~/wm/qtile/autostart.sh ~/.config/qtile/autostart.sh
     #Polybar
-    mkdir ~/.config/polybar/;
-    cp -i ~/wm/polybar/config.ini ~/.config/polybar/config.ini;
+    mkdir ~/.config/polybar/
+    cp -i ~/wm/polybar/config.ini ~/.config/polybar/config.ini
     #Alacritty
-    mkdir alacritty
+    mkdir ~/.config/alacritty/
     cp -i ~/wm/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
     #Wallpaper
-    cp -r ~/wm/wallpapers/ ~/.config/;
+    cp -r ~/wm/wallpapers/ ~/.config/
     #Mouse
-    sudo cp -i ~/wm/mouse/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf;
+    sudo cp -i ~/wm/mouse/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
     #sxhkd
-    mkdir ~/.config/sxhkd;
-    cp -i ~/wm/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc;
-    #Clean useless file and folder;
-    sudo rm -r ~/wm/ && rm installer.sh; 
-    echo "Don't forget to configure TLP before rebooting...";
+    mkdir ~/.config/sxhkd/
+    cp -i ~/wm/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
+    #Clean useless file and folder
+    sudo rm -r ~/wm/ && rm installer.sh
+    echo "Don't forget to configure TLP before rebooting..."
     case $yn in
         [Yy]* ) reboot;
                 break;;
