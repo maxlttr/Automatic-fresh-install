@@ -37,6 +37,8 @@ do
             echo "Beginning config installation...";
             sudo pacman -S git neofetch htop vim man networkmanager brightnessctl otf-aurulent-nerd sxhkd qtile polybar rofi tlp xorg-xrandr arandr nitrogen; 
             config_setup
+            systemctl enable tlp.service
+            systemctl start tlp.service
             exit;;
         "Update")
             echo "Beginning config update...";
