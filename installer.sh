@@ -40,7 +40,7 @@ do
             systemctl enable tlp.service
             systemctl start tlp.service
             alacritty -e firefox -private-window https://linrunner.de/tlp/settings/index.html
-            alacritty -e vim /etc/tlp.conf
+            alacritty -e sudo vim /etc/tlp.conf
             exit;;
         "Update")
             echo "Beginning config update...";
