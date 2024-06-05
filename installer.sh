@@ -20,7 +20,6 @@ config_setup () {
     cp -i ~/wm/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
     #Clean useless file and folder
     sudo rm -r ~/wm/ && rm installer.sh
-    echo "Don't forget to configure TLP before rebooting..."
     case $yn in
         [Yy]* ) reboot;
                 break;;
@@ -37,8 +36,11 @@ do
             echo "Beginning config installation...";
             sudo pacman -S git neofetch htop vim man networkmanager brightnessctl otf-aurulent-nerd sxhkd qtile polybar rofi tlp xorg-xrandr arandr nitrogen; 
             config_setup
+            #TLP config
             systemctl enable tlp.service
             systemctl start tlp.service
+            alacritty -e firefox -private-window https://linrunner.de/tlp/settings/index.html
+            alacritty -e vim /etc/tlp.conf
             exit;;
         "Update")
             echo "Beginning config update...";
