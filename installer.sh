@@ -8,9 +8,6 @@ config_setup () {
     #Polybar
     mkdir ~/.config/polybar/
     cp -i ~/wm/polybar/config.ini ~/.config/polybar/config.ini
-    #Picom
-    mkdir ~/.config/picom/
-    cp -i ~/wm/picom/picom.conf ~/.config/picom/picom.conf
     #Alacritty
     mkdir ~/.config/alacritty/
     cp -i ~/wm/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
