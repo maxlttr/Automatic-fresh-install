@@ -20,6 +20,7 @@ config_setup () {
     cp -i ~/wm/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
     #Clean useless file and folder
     sudo rm -r ~/wm/ && rm installer.sh
+    read -p "Reboot now? (y/n)"
     case $yn in
         [Yy]* ) reboot;
                 break;;
