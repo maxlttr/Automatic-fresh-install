@@ -22,7 +22,7 @@ config_setup () {
     sudo rm -r ~/wm/ && rm installer.sh
     read -p "Reboot now? (y/n)"
     case $yn in
-        [Yy]* ) reboot;
+        [Yy]* ) sudo reboot;
                 break;;
         [Nn]* ) break;;
     esac
@@ -36,10 +36,10 @@ do
         "New Install (includes basic packages)")
             echo "Beginning config installation...";
             sudo pacman -S git neofetch firefox picom htop vim man networkmanager brightnessctl otf-aurulent-nerd sxhkd qtile polybar rofi tlp xorg-xrandr arandr nitrogen; 
-            config_setup
             systemctl enable tlp.service
             systemctl start tlp.service
             alacritty -e sudo vim /etc/tlp.conf
+            config_setup
             exit;;
         "Update")
             echo "Beginning config update...";
