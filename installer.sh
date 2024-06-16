@@ -35,12 +35,10 @@ do
     case $option in
         "New Install (includes basic packages)")
             echo "Beginning config installation...";
-            sudo pacman -S git neofetch htop vim man networkmanager brightnessctl otf-aurulent-nerd sxhkd qtile polybar rofi tlp xorg-xrandr arandr nitrogen; 
+            sudo pacman -S git neofetch firefox picom htop vim man networkmanager brightnessctl otf-aurulent-nerd sxhkd qtile polybar rofi tlp xorg-xrandr arandr nitrogen; 
             config_setup
-            #TLP config
             systemctl enable tlp.service
             systemctl start tlp.service
-            alacritty -e firefox -private-window https://linrunner.de/tlp/settings/index.html
             alacritty -e sudo vim /etc/tlp.conf
             exit;;
         "Update")
