@@ -35,7 +35,7 @@ do
     case $option in
         "New Install (includes basic packages)")
             echo "Beginning config installation...";
-            sudo pacman -S git neofetch firefox picom htop vim man networkmanager brightnessctl otf-aurulent-nerd sxhkd qtile polybar rofi tlp xorg-xrandr arandr nitrogen; 
+            sudo pacman -S git neofetch firefox picom htop vim man dolphin networkmanager brightnessctl otf-aurulent-nerd sxhkd qtile polybar rofi tlp xorg-xrandr arandr nitrogen; 
             systemctl enable tlp.service
             systemctl start tlp.service
             alacritty -e sudo vim /etc/tlp.conf
